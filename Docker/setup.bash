@@ -20,7 +20,7 @@ curl -sL https://deb.nodesource.com/setup_11.x | bash -
 apt-get install -y nodejs npm
 
 # Setup Npm Packages
-if [ `/bin/ls package.json` = "package.json" ] ; then cp package.json $workDirectory && npm install && cp -rfv ../* $workDirectory; else echo "Skip Package.json"; fi
+if [ `/bin/ls ../package.json` = "../package.json" ] ; then cp package.json $workDirectory && npm install && cp -rfv ../* $workDirectory; else echo "Skip Package.json"; fi
 
 # Setup ssh server
 mkdir /var/run/sshd
