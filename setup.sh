@@ -27,7 +27,7 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 
 # TODO
 # Get bashrc settings
-curl https://gist.githubusercontent.com/yanagiragi/9672924e9f2fa1baf1ce4b6dd17592ac/raw/04838587ce726800d2679abd6df6274a64fcb4d8/.bashrc >> .bashrc
+curl https://gist.githubusercontent.com/yanagiragi/9672924e9f2fa1baf1ce4b6dd17592ac/raw/04838587ce726800d2679abd6df6274a64fcb4d8/.bashrc >> ~/.bashrc
 
 # Get Vim settings
 mkdir -p ~/.vim/colors
@@ -43,4 +43,4 @@ if [ `/bin/ls package.json` = "package.json" ] ; then cp package.json /home && n
 echo "export VISIBLE=now" >> /etc/profile
 
 # Run SSH Server By Default
-/usr/sbin/sshd -D
+/usr/sbin/sshd -D &
