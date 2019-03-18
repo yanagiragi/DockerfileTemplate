@@ -40,3 +40,6 @@ curl https://gist.githubusercontent.com/yanagiragi/d5c99f79892a4063a7db0cbcd0613
 
 # Run SSH Server in background
 /usr/sbin/sshd -D &
+
+# start cron
+`which service` cron start
